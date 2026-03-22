@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  write-all
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -31,7 +34,7 @@ jobs:
           path: gh-pages
 
       - name: Generate Allure report
-        uses: simple-agi/allure-report-action@master
+        uses: simple-elf/allure-report-action@master
         if: always()
         with:
           allure_results: allure-results
