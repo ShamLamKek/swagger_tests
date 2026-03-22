@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","175","Позитивный тест создания питомца","suites.functional.pet","Sun Mar 22 03:59:27 UTC 2026","passed","Sun Mar 22 03:59:27 UTC 2026","","test_create_pet","",""
