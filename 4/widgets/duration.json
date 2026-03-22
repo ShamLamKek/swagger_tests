@@ -1,0 +1,1 @@
+[{"uid":"7c1a3d1acd889cff","name":"Негативный тест создания питомца","time":{"start":1774154552022,"stop":1774154552066,"duration":44},"status":"failed","severity":"normal"},{"uid":"80ea72f39ce8fb23","name":"Позитивный тест создания питомца","time":{"start":1774154551841,"stop":1774154552019,"duration":178},"status":"passed","severity":"normal"}]
