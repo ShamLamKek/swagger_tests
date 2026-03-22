@@ -1,5 +1,6 @@
 #test_create_pet
 import allure
+from services.pet.pet_model import PetResponse
 
 
 @allure.feature("Pet")  # группа функциональности
@@ -18,5 +19,6 @@ def test_create_pet_positive(pet_api):
     with allure.step("Проверить ответ"):
         assert response.status_code == 200
         response_data = response.json()
-        assert response_data["name"] == "doggie"
-        assert response_data["id"] is not None
+        pet = PetResponse(**response_data)  # валидация через Pydantic
+        assert pet.name == "doggie"
+        assert pet.id is not None
